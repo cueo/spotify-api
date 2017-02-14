@@ -1,4 +1,6 @@
 '''
+Sample track file used by create_playlists.py
+
 Format:
 Playlist #1
 Song #1
