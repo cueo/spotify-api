@@ -7,6 +7,11 @@ Song #2
 Playlist #2
 Song #1
 ...
+
+or
+
+replace Artist with Playlist (but include artist's name with the track name)
+comment/uncomment corresponding lines in create_playlists.py
 '''
 
 tracks = '''Pink Floyd

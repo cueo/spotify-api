@@ -13,9 +13,12 @@ for item in music_list_raw:
 	music_list_clean = item.split('\n')
 	query_list.append([music_list_clean[0]])
 	for music in music_list_clean[1:]:
+		# if the name of the playlist is artist's name
 		query_list[-1].append(music_list_clean[0] + ' ' + music)
+		# if the name of the artist is included with song name
+		# query_list[-1].append(music)
 
-username = sys.argv[0]
+username = sys.argv[1]
 scope = 'playlist-modify-public'
 token = util.prompt_for_user_token(username, scope=scope, client_id=client_id, client_secret=client_secret, redirect_uri=redirect_uri)
 
